@@ -7,19 +7,85 @@
     <style>
       body {
         margin: 0;
+        height: 100vh;
+      }
+      * {
+        border: 0px solid white;
+      }
+      .flex {
+        display: flex;
+      }
+      .colunm {
+        flex-direction: column;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      a {
+        text-decoration: none;
       }
     </style>
   </head>
-  <body>
+  <body class="column">
     <div
+      class="flex"
       style="
-        margin: 24px auto;
-        height: 5px;
-        width: 355px;
+        margin: 1px auto;
+        height: 40px;
+        width: 450px;
         background-color: #f1f1f1;
       "
     >
-      <p style="background-color: #f1f1f1"></p>
+      <div
+        class="flex column"
+        style="
+          max-height: 40px;
+          width: 90px;
+          background-color: #f1f1f1;
+          text-align: center;
+          display: table-cell;
+        "
+      >
+        <a href="/index.html" style="margin: 0px auto; color: rgb(0, 0, 0)"
+          >首页</a
+        >
+      </div>
+      <div
+        class="flex column"
+        style="
+          max-height: 40px;
+          width: 90px;
+          background-color: #f1f1f1;
+          text-align: center;
+          display: table-cell;
+        "
+      >
+        <a href="/2.html" style="margin: 0px auto; color: rgb(0, 0, 0)">二页</a>
+      </div>
+      <div
+        class="flex column"
+        style="
+          max-height: 40px;
+          width: 90px;
+          background-color: #f1f1f1;
+          text-align: center;
+          display: table-cell;
+        "
+      >
+        <p style="margin: 0px auto">...</p>
+      </div>
+      <div
+        class="flex column"
+        style="
+          max-height: 40px;
+          width: 90px;
+          background-color: #f1f1f1;
+          text-align: center;
+          display: table-cell;
+        "
+      >
+        <p style="margin: 0px auto">...</p>
+      </div>
     </div>
     <div
       style="
